@@ -1,0 +1,9 @@
+{
+  "name": "img-analyzer-fe-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/img-analyzer-fe-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["img-analyzer-fe"],
+  "// targets": "to see all targets run: nx show project img-analyzer-fe-e2e --web",
+  "targets": {}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "img-analyzer-be",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/img-analyzer-be/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": ["build"],
+      "options": {
+        "buildTarget": "img-analyzer-be:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "img-analyzer-be:build:development"
+        },
+        "production": {
+          "buildTarget": "img-analyzer-be:build:production"
+        }
+      }
+    }
+  }
+}

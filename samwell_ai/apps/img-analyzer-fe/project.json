@@ -1,0 +1,17 @@
+{
+  "name": "img-analyzer-fe",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/img-analyzer-fe",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project img-analyzer-fe --web",
+  "targets": {
+    "build": {
+      "cwd": "apps/img-analyzer-fe",
+      "tty": false
+    },
+    "start": {
+      "cwd": "apps/img-analyzer-fe"
+    }
+  }
+}
