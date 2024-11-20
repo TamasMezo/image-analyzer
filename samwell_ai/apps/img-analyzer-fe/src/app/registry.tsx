@@ -27,7 +27,7 @@ export function StyledComponentsRegistry({
 
   return (
     <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
-      {children}
+      <>{children}</>
     </StyleSheetManager>
   );
 }

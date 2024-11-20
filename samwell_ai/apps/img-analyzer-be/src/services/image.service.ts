@@ -10,3 +10,31 @@ export const getRandomImages = async () => {
     throw error;
   }
 };
+
+const tagArray = [
+  'apple',
+  'banana',
+  'cherry',
+  'date',
+  'elderberry',
+  'fig',
+  'grape',
+  'honeydew',
+  'kiwi',
+  'lemon',
+  'mango',
+  'nectarine',
+  'orange',
+  'papaya',
+  'quince',
+  'raspberry',
+  'strawberry',
+  'tangerine',
+  'watermelon',
+  'blueberry',
+];
+
+export const getRandomTagsForImage = (numItems: number = 4): string[] => {
+  const shuffled = [...tagArray].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, numItems);
+};

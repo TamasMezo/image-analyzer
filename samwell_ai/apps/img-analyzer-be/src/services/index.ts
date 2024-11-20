@@ -1,3 +1,3 @@
-import { getRandomImages } from './image.service';
+import { getRandomImages, getRandomTagsForImage } from './image.service';
 
-export { getRandomImages };
+export { getRandomImages, getRandomTagsForImage };
